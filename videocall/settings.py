@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-9ndce&l@l+tiq0&hpd^9p!xki()!dka-l+ad+$cn)48v-%(ybr
 
 DEBUG = False
 
-ALLOWED_HOSTS = ["video-call-dj.herokuapp.com", "django-videocall.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["video-call-dj.herokuapp.com", "video-call-django.herokuapp.com", "localhost"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -25,6 +25,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
